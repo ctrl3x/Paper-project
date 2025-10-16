@@ -1,0 +1,249 @@
+:root {
+    --left-width: 20% ;
+    /* ширина левого блока (можно менять) */
+    --blue: #0000FF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    width: 1440px;
+    height: 680px;
+    flex-direction: row;
+}
+
+.left-block {
+    width: 41%;
+    background-color: #0000FF;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.right-block {
+    width: 59%;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.vector {
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.bottom-right {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.white{
+    color: #FFFFFF;
+}
+
+.top-text {    
+    position: absolute;
+    width: 76px;
+    height: 15px;
+    right: 419px;
+    top: 50px;
+
+    font-family: 'PT Root UI';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20.7739px;
+    line-height: 26px;
+    
+    leading-trim: both;
+    text-edge: cap;
+    text-align: right;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+.bottom-text {
+    position: absolute;
+    width: 123px;
+    height: 41px;
+    right: 371px;
+    top: 589px;
+
+    font-family: 'PT Root UI';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20.7739px;
+    line-height: 26px;
+
+    leading-trim: both;
+    text-edge: cap;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+
+.hero-wrap {
+    position: absolute;
+    inset: 0;
+    display: block;
+    pointer-events: none;
+    z-index: 5;
+}
+
+.hero-title {
+    position: absolute;
+    width: 614px;
+    left: 413px;
+    top: 295px;
+
+    font-family: 'PT Root UI';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 91px;
+    line-height: 164px;
+
+    margin-left: 68px;
+    z-index: 5;
+    white-space: nowrap;
+    letter-spacing: 2px;
+
+    /* градиент на текст */
+    background: linear-gradient(to right,
+            #ffffff 0 var(--left-width),
+            var(--blue) var(--left-width) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    /* финальная прозрачность цвета */
+    -webkit-text-fill-color: transparent;
+}
+
+.mouse-format {
+    position: absolute;
+    width: 545.97px;
+    height: 469.72px;
+    left: 797px;
+    top: 0px;
+}
+
+.bottom-right-text{
+    position: absolute;
+    width: 426px;
+    height: 60px;
+    left: 917px;
+    top: 530px;
+
+    font-family: 'PT Root UI';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 60px;
+    text-align: right;
+
+    color: #000000;
+}
+
+.bottom-right-page-text{
+    position: absolute;
+    width: 157px;
+    height: 30px;
+    left: 1186.76px;
+    top: 600px;
+
+    font-family: 'PT Root UI';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: right;
+
+    color: #0000FF;
+}
+
+
+/* форматы */
+.formats {
+    position: absolute;
+    width: 1440px;
+    height: 680px;
+    left: 0px;
+    top: 1360px;
+
+    background: #FFFFFF;
+}
+
+.props{
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 1440px;
+    height: 680px;
+    left: 0px;
+    top: 4760px;
+
+    background: #FFFFFF;
+    border: 1px solid #000000;
+}
+
+.footer{
+    position: absolute;
+    width: 1440px;
+    height: 333px;
+    left: 0px;
+    top: 5440px;
+
+    background: #FFFFFF;
+}
+
+
+.autor {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 30px;
+
+    position: absolute;
+    width: 318px;
+    height: 88px;
+    left: 98px;
+    top: 123px;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 25px;
+
+    position: absolute;
+    width: 120px;
+    height: 78px;
+    left: 660px;
+    top: 131px;
+}
+
+.hse-lable{
+    position: absolute;
+    width: 295px;
+    height: 122.52px;
+    left: 1047px;
+    top: 106px;
+}
+
