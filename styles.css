@@ -21,6 +21,7 @@ html {
     width: 1440px;
     height: 680px;
     flex-direction: row;
+    position: relative;
 }
 
 .left-block {
@@ -181,7 +182,6 @@ html {
     width: 1440px;
     height: 680px;
     left: 0px;
-    top: 1360px;
 
     background: #FFFFFF;
 }
@@ -193,7 +193,6 @@ html {
     width: 1440px;
     height: 680px;
     left: 0px;
-    top: 4760px;
 
     background: #FFFFFF;
     border: 1px solid #000000;
@@ -246,4 +245,243 @@ html {
     left: 1047px;
     top: 106px;
 }
+
+
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 52px;
+
+    position: absolute;
+    width: 1440px;
+    height: 680px;
+    left: calc(50% - 1440px/2);
+}
+
+.font-props{
+    width: 557.19px;
+    height: 46px;
+
+    font-family: 'PT Root UI';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    color: #0000FF;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 52px;
+    isolation: isolate;
+
+    position: absolute;
+    width: 557.19px;
+    height: 275px;
+    left: calc(50% - 557.19px/2 - 343.4px);
+}
+
+.mouse2{
+    position: absolute;
+    width: 150px;
+    height: 75px;
+    left: 434px;
+    top: 43px;
+}
+
+.blue{
+    background: #0000FF;
+}
+
+
+.auth{
+    position: absolute;
+    width: 463.46px;
+    height: 602.01px;
+    left: calc(50% - 463.46px/2 + 405px);
+    bottom: 87.18px;
+
+    transform: rotate(-105deg);
+}
+
+.mouse3{
+    position: absolute;
+    width: 148.5px;
+    height: 58px;
+    left: 279.73px;
+    top: 129.19px;
+
+    transform: rotate(105deg);
+}
+
+.mouse6{    
+    position: absolute;
+    width: 144.5px;
+    height: 146.69px;
+    left: 580px;
+    top: 193px;
+}
+
+.mouse7{
+    position: absolute;
+    width: 149.5px;
+    height: 151.19px;
+    left: 1px;
+    top: 189px;
+
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+
+.paper-props{
+    position: absolute;
+    width: 375px;
+    height: 60px;
+    left: calc(50% - 375px/2 - 434.5px);
+
+    font-family: 'PT Root UI';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 60px;
+
+    color: #FFFFFF;
+}
+
+.feature{
+    margin-top: auto;
+    margin-left: auto;
+}
+
+.prop-top-group{
+    position: absolute;
+    width: 1235px;
+    height: 234px;
+    left: 98px;
+    top: 145px;
+}
+
+.prop-bottom-group{
+    position: absolute;
+    width: 1137px;
+    height: 155.03px;
+    left: 131px;
+    top: 379px;
+}
+
+.grid4{
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 колонки */
+    grid-template-rows: 1fr 1fr; /* 2 строки */
+    width: 100%; /* чтобы не ехало позиционирование и размер item */
+    height: 100%;
+}
+
+
+.item{
+    border-width: 1px 0px 1px 1px;
+    border-style: dashed;
+    border-color: #FFFFFF;
+    position: relative;
+}
+
+
+.glif-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    gap: 588px;
+
+    position: absolute;
+    width: 1244px;
+    height: 60px;
+    left: 98px;
+    top: 40px;
+}
+
+.glif-header p{
+    width: 518px;
+    height: 50px;
+
+    font-family: 'PT Root UI';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: justify;
+
+    /* main/black */
+    color: #0B0B0B;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+
+.table {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    position: absolute;
+    width: 1244px;
+    height: 500px;
+    left: 98px;
+    top: 130px;
+}
+
+.lines {
+    display: flex;
+    align-items: stretch;
+    margin-bottom: 0;
+    gap: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.glyph {
+    border: 1px solid #C3C3C3;
+    width: calc(100% / 12);
+    text-align: center;
+    aspect-ratio: 1 / 1; /* Ключевое свойство для квадратов */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: white;
+    transition: all 0.2s ease;
+    margin: 0;
+    border-collapse: collapse;
+
+    font-family: 'PT Root UI';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 60px;
+
+    leading-trim: both;
+    text-edge: cap;
+
+    color: #000000;
+
+    box-sizing: border-box;
+    flex-shrink: 0;
+}
+
+
 
