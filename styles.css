@@ -56,6 +56,10 @@ html {
     color: #FFFFFF;
 }
 
+.white-back{
+    background-color: #FFFFFF;
+}
+
 .top-text {    
     position: absolute;
     width: 76px;
@@ -281,12 +285,46 @@ html {
     align-items: flex-start;
     padding: 0px;
     gap: 52px;
-    isolation: isolate;
 
     position: absolute;
     width: 557.19px;
-    height: 275px;
+    height: 554px;
     left: calc(50% - 557.19px/2 - 343.4px);
+    top: 40px;
+}
+
+.story-lable{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 30px;
+
+    width: 218px;
+    height: 78px;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.story{
+    width: 557.19px;
+    height: 227px;
+
+    font-family: 'PT Root UI';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 20px;
+
+    leading-trim: both;
+    text-edge: cap;
+    text-align: justify;
+
+    color: #000000;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
 }
 
 .mouse2{
@@ -311,14 +349,29 @@ html {
     transform: rotate(-105deg);
 }
 
+.font-author{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+    padding: 0px;
+    row-gap: 0px;
+
+    position: relative;
+    width: 523.5px;
+    height: 403.02px;
+    left: 798px;
+    top: 191px;
+}
+
 .mouse3{
     position: absolute;
     width: 148.5px;
     height: 58px;
-    left: 279.73px;
-    top: 129.19px;
-
-    transform: rotate(105deg);
+    left: 1173px;
+    top: 120px;
+    z-index: 10;
 }
 
 .mouse6{    
@@ -337,6 +390,14 @@ html {
     top: 189px;
 
     transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.mouse8{
+    position: absolute;
+    width: 111.73px;
+    height: 150px;
+    left: calc(50% - 111.73px/2 - 0.13px);
+    top: 468px;
 }
 
 .paper-props{
@@ -385,11 +446,20 @@ html {
 
 
 .item{
+    position: relative;
+}
+
+.bordered{
     border-width: 1px 0px 1px 1px;
     border-style: dashed;
     border-color: #FFFFFF;
     border-top: none;
-    position: relative;
+}
+
+.blue-border{
+    border-width: 1px 1px 1px 1px;
+    border-color: #0000FF;
+    border-style: solid;
 }
 
 .item-content {
