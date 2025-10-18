@@ -175,8 +175,6 @@ html {
     color: #0000FF;
 }
 
-
-/* форматы */
 .formats {
     position: absolute;
     width: 1440px;
@@ -207,7 +205,6 @@ html {
 
     background: #FFFFFF;
 }
-
 
 .autor {
     display: flex;
@@ -304,7 +301,6 @@ html {
     background: #0000FF;
 }
 
-
 .auth{
     position: absolute;
     width: 463.46px;
@@ -342,7 +338,6 @@ html {
 
     transform: matrix(-1, 0, 0, 1, 0, 0);
 }
-
 
 .paper-props{
     position: absolute;
@@ -393,7 +388,29 @@ html {
     border-width: 1px 0px 1px 1px;
     border-style: dashed;
     border-color: #FFFFFF;
+    border-top: none;
     position: relative;
+}
+
+.item-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 69px;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.item-content h1{
+    width: 524px;
+    height: 14;
+
+    text-align: justify;
+    word-spacing: 241px;
 }
 
 
@@ -482,6 +499,5 @@ html {
     box-sizing: border-box;
     flex-shrink: 0;
 }
-
 
 
