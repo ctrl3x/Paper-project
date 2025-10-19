@@ -1,5 +1,7 @@
+@import "font.css";
+
 :root {
-    --left-width: 20% ;
+    --left-width: 25% ;
     /* ширина левого блока (можно менять) */
     --blue: #0000FF;
 }
@@ -111,14 +113,14 @@ html {
 
 .hero-title {
     position: absolute;
-    width: 614px;
-    left: 413px;
+    width: 620px;
+    left: 344px;
     top: 295px;
 
     font-family: 'PT Root UI';
     font-style: normal;
     font-weight: 500;
-    font-size: 91px;
+    font-size: 130px;
     line-height: 164px;
 
     margin-left: 68px;
