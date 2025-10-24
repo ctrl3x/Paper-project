@@ -27,12 +27,10 @@ html {
 }
 
 .left-block {
-    width: 41%;
-    background-color: #0000FF;
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
-    position: relative;
+    position: absolute;
+    width: 586px;
+    height: 680px;
+    background: #0000FF;
 }
 
 .right-block {
@@ -50,8 +48,10 @@ html {
 
 .bottom-right {
     position: absolute;
-    bottom: 10px;
-    right: 10px;
+    width: 151.29px;
+    height: 152.25px;
+    left: 435px;
+    top: 528px;
 }
 
 .white{
@@ -115,7 +115,7 @@ html {
     position: absolute;
     width: 620px;
     left: 344px;
-    top: 295px;
+    top: 271px;
 
     font-family: 'PT Root UI';
     font-style: normal;
@@ -177,6 +177,74 @@ html {
     font-size: 24px;
     line-height: 30px;
     text-align: right;
+
+    color: #0000FF;
+}
+
+.img-auth{
+    position: absolute;
+    width: 201px;
+    height: 195px;
+    left: 30.48px;
+}
+
+.ru{
+    position: absolute;
+    width: 11px;
+    height: 6px;
+    left: 10.66px;
+    top: 10.66px;
+
+    font-family: 'PT Root UI';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 7.99648px;
+    line-height: 10px;
+
+    leading-trim: both;
+    text-edge: cap;
+    text-transform: uppercase;
+
+    color: #0000FF;
+}
+
+.a3{
+    position: absolute;
+    width: 10px;
+    height: 6px;
+    left: 241.42px;
+    top: 10.66px;
+
+    font-family: 'PT Root UI';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 7.99648px;
+    line-height: 10px;
+
+    leading-trim: both;
+    text-edge: cap;
+    text-align: right;
+
+    color: #0000FF;
+}
+
+.pap{
+    position: absolute;
+    width: 30px;
+    height: 6px;
+    left: 221.24px;
+    bottom: 21px;
+
+    font-family: 'PT Root UI';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 7.99648px;
+    line-height: 10px;
+
+    leading-trim: both;
+    text-edge: cap;
+    text-align: right;
+    text-transform: uppercase;
 
     color: #0000FF;
 }
@@ -263,24 +331,6 @@ html {
     left: calc(50% - 1440px/2);
 }
 
-.font-props{
-    width: 557.19px;
-    height: 46px;
-
-    font-family: 'PT Root UI';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 23px;
-    color: #0000FF;
-
-    /* Inside auto layout */
-    flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 0;
-}
-
 .left{
     display: flex;
     flex-direction: column;
@@ -337,7 +387,7 @@ html {
     top: 43px;
 }
 
-.blue{
+.blue-back{
     background: #0000FF;
 }
 
@@ -345,9 +395,10 @@ html {
     position: absolute;
     width: 463.46px;
     height: 602.01px;
-    left: calc(50% - 463.46px/2 + 405px);
-    bottom: 87.18px;
+    left: 893.27px;
+    top: -9.19px;
 
+    background: #0000FF;
     transform: rotate(-105deg);
 }
 
@@ -572,4 +623,65 @@ html {
     flex-shrink: 0;
 }
 
+.story-label h1 {
+    font-family: 'PT Root UI', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    color: #000;
+    margin: 0;
+}
 
+.story-label p {
+    font-family: 'PT Root UI', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    color: #000;
+    margin: 0;
+}
+
+.font-props {
+    font-family: 'PT Root UI', sans-serif;
+    font-size: 18px;
+    line-height: 23px;
+    color: #000;
+}
+
+.story {
+    position: absolute;
+    width: 557.19px;
+    height: 227px;
+    left: 0px;
+    top: 327px;
+
+    font-family: 'PT Root UI';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+
+    leading-trim: both;
+    text-edge: cap;
+    text-align: justify;
+
+    color: #000000;
+
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    z-index: 2;
+}
+
+.story .bold {
+    font-weight: 600;
+}
+
+.story .underlined {
+    text-decoration: underline;
+}
+
+.font-props .blue-bold {
+    color: #0000FF;
+    font-weight: 500;
+}

@@ -5,3 +5,20 @@
     font-style: normal;
     font-display: swap;
 }
+
+@font-face {
+    font-family: 'PT Root UI';
+    src: url('../fonts/PT-Root-UI_Medium/PT\ Root\ UI_Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: medium;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PT Root UI';
+    src: url('../fonts/PT-Root-UI_Bold/PT\ Root\ UI_Bold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: bold;
+    font-display: swap;
+}
+
