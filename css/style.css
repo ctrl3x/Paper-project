@@ -1,11 +1,5 @@
 @import "font.css";
 
-:root {
-    --left-width: 25% ;
-    /* ширина левого блока (можно менять) */
-    --blue: #0000FF;
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -596,6 +590,26 @@ html {
     text-align-last: justify;
 }
 
+.item-content h2 {
+    font-family: 'PT Root UI';
+
+    font-style: normal;
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 500;
+    width: 524px;
+    height: 14;
+
+    text-align: justify;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 40px;
+
+    color: #000000;
+}
+
 .big {
     font-family: 'PT Root UI';
     font-style: normal;
@@ -767,4 +781,119 @@ html {
 
 .font-props p{
     margin-bottom: 10px;
+}
+
+.big-blue {
+    width: 524px;
+    height: 50px;
+
+    font-family: 'PT Root UI';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 50px;
+    text-align: justify;
+    letter-spacing: 0.71em;
+
+    color: #0000FF;
+}
+
+.big-blue-light {
+    width: 524px;
+    height: 100px;
+
+    font-family: 'PT Root UI';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 50px;
+    text-align: justify;
+    text-align-last: justify;
+    letter-spacing: 0.59em;
+
+    color: #0000FF;
+}
+
+.sdigits .item-content {
+    gap: 20px;
+}
+
+.blue-large {
+    width: 119px;
+    height: 90px;
+
+    font-family: 'PT Root UI';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 128px;
+    line-height: 161px;
+    
+    leading-trim: both;
+    text-edge: cap;
+    text-align: right;
+    letter-spacing: 0.15em;
+
+    color: #0000FF;
+
+
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.fractions {
+    width: 361px;
+    height: 90px;
+
+    position: absolute;
+    left: 170px;
+    top: 85px;
+
+    font-family: 'PT Root UI';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 50px;
+
+    leading-trim: both;
+    text-edge: cap;
+    letter-spacing: 0.55em;
+
+    color: #000000;
+}
+
+.digits-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 39px;
+
+    position: absolute;
+    width: 520px;
+    height: 173px;
+    left: 822px;
+    top: 445px;
+}
+
+.large {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 39px;
+
+    font-family: 'PT Root UI';
+    font-size: 67px;
+
+    text-align: justify;
+    text-align-last: justify;
+
+    position: absolute;
+    width: 520px;
+    height: 173px;
+    left: 102px;
+    top: 105px;
 }
