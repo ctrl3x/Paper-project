@@ -18,6 +18,19 @@ html {
     width: 100%;
 }
 
+.white {
+    color: #FFFFFF;
+}
+
+.blue {
+    color: #0000FF;
+}
+
+.bold {
+    font-weight: 600;
+    font-style: bold;
+}
+
 .container {
     display: flex;
     width: 1440px;
@@ -127,16 +140,6 @@ html {
     z-index: 5;
     white-space: nowrap;
     letter-spacing: 2px;
-
-    /* градиент на текст */
-    background: linear-gradient(to right,
-            #ffffff 0 var(--left-width),
-            var(--blue) var(--left-width) 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    /* финальная прозрачность цвета */
-    -webkit-text-fill-color: transparent;
 }
 
 .mouse-format {
@@ -186,6 +189,7 @@ html {
     width: 201px;
     height: 195px;
     left: 30.48px;
+    bottom: 0px;
 }
 
 .ru{
@@ -372,12 +376,19 @@ html {
     leading-trim: both;
     text-edge: cap;
     text-align: justify;
+    text-justify: inter-word;
 
     color: #000000;
     flex: none;
     order: 2;
     flex-grow: 0;
+    line-height: 24px;
 }
+
+.story p {
+    margin-bottom: 10px;
+}
+
 
 .mouse2{
     position: absolute;
@@ -395,11 +406,29 @@ html {
     position: absolute;
     width: 463.46px;
     height: 602.01px;
-    left: 893.27px;
+    left: 1020px;
     top: -9.19px;
 
     background: #0000FF;
     transform: rotate(-105deg);
+}
+
+.auth p{
+    position: absolute;
+    width: 24px;
+    height: 13px;
+    left: 430.03px;
+    top: 30px;
+
+    font-family: 'PT Root UI';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18.3912px;
+    line-height: 23px;
+
+    color: #FFFFFF;
+
+    transform: rotate(90deg);
 }
 
 .font-author{
@@ -441,8 +470,6 @@ html {
     height: 151.19px;
     left: 1px;
     top: 189px;
-
-    transform: matrix(-1, 0, 0, 1, 0, 0);
 }
 
 .mouse8{
@@ -509,6 +536,21 @@ html {
     border-top: none;
 }
 
+.white-back .bordered{
+    border-top: 1px dashed blue;
+    border-left: 1px dashed blue;
+}
+
+/* Правая граница для крайних правых элементов */
+.bordered:nth-child(2n) {
+    border-right: 1px dashed blue;
+}
+
+/* Нижняя граница для элементов последней строки */
+.bordered:nth-last-child(-n+2) {
+    border-bottom: 1px dashed blue;
+}
+
 .blue-border{
     border-width: 1px 1px 1px 1px;
     border-color: #0000FF;
@@ -516,24 +558,52 @@ html {
 }
 
 .item-content {
+    font-family: 'PT Root UI';
+
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 0px;
     gap: 69px;
 
+    width: 524px;
+    height: 64px;
+
+    font-family: 'PT Root UI';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: justify;
+
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 70px;
     transform: translate(-50%, -50%);
 }
 
-.item-content h1{
+.item-content h1 {
+    font-family: 'PT Root UI';
+    
+    font-style: normal;
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 500;
     width: 524px;
     height: 14;
 
     text-align: justify;
-    word-spacing: 241px;
+    text-align-last: justify;
+}
+
+.big {
+    font-family: 'PT Root UI';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 76px;
+
+    color: #FFFFFF;
 }
 
 
@@ -552,7 +622,7 @@ html {
     top: 40px;
 }
 
-.glif-header p{
+.glif-header p {
     width: 518px;
     height: 50px;
 
@@ -624,21 +694,27 @@ html {
 }
 
 .story-label h1 {
-    font-family: 'PT Root UI', sans-serif;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 44px;
-    color: #000;
-    margin: 0;
+    width: 218px;
+    height: 34px;
+
+    font-family: 'PT Root UI';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 60px;
 }
 
 .story-label p {
     font-family: 'PT Root UI', sans-serif;
+    font-style: normal;
     font-weight: 400;
-    font-size: 18px;
-    line-height: 23px;
+    font-size: 20px;
+    line-height: 25px;
     color: #000;
-    margin: 0;
+    margin-top: 30px;
+
+    width: 218px;
+    height: 14px;
 }
 
 .font-props {
@@ -646,6 +722,7 @@ html {
     font-size: 18px;
     line-height: 23px;
     color: #000;
+    gap: 10px;
 }
 
 .story {
@@ -653,7 +730,7 @@ html {
     width: 557.19px;
     height: 227px;
     left: 0px;
-    top: 327px;
+    top: 317px;
 
     font-family: 'PT Root UI';
     font-style: normal;
@@ -673,8 +750,9 @@ html {
     z-index: 2;
 }
 
-.story .bold {
-    font-weight: 600;
+.story .medium {
+    font-weight: 500;
+    font-style: medium;
 }
 
 .story .underlined {
@@ -683,5 +761,10 @@ html {
 
 .font-props .blue-bold {
     color: #0000FF;
+    font-style: medium;
     font-weight: 500;
+}
+
+.font-props p{
+    margin-bottom: 10px;
 }
