@@ -947,6 +947,14 @@ h1 {
     color: #000000;
 }
 
+.autor h1 {
+    margin-bottom: 30px;
+}
+
+.autor h1:last-child {
+    margin-bottom: 0;
+}
+
 .widget {
     display: inline-flex;
     align-items: center;
