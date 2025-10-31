@@ -11,6 +11,11 @@ html {
     height: 100%;
     width: 100%;
     font-family: 'PT Root UI';
+    margin: 0 auto;
+}
+
+h1 {
+    font-weight: 500;
 }
 
 .white {
@@ -33,6 +38,7 @@ html {
     height: 680px;
     flex-direction: row;
     position: relative;
+    margin: 0 auto;
 }
 
 .left-block {
@@ -185,7 +191,7 @@ html {
     width: 201px;
     height: 195px;
     left: 30.48px;
-    bottom: 0px;
+    bottom: -2px;
 }
 
 .ru{
@@ -269,14 +275,13 @@ html {
     background: #FFFFFF;
 }
 
-.footer{
-    position: absolute;
-    width: 1440px;
-    height: 333px;
-    left: 0px;
-    top: 5440px;
-
+.footer {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
     background: #FFFFFF;
+    position: relative;
+    height: 333px;
 }
 
 .autor {
@@ -762,7 +767,7 @@ html {
 
     font-family: 'PT Root UI';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 200;
     font-size: 40px;
     line-height: 50px;
     text-align: justify;
@@ -777,7 +782,7 @@ html {
 
     font-family: 'PT Root UI';
     font-style: normal;
-    font-weight: 300;
+    font-weight: 200;
     font-size: 40px;
     line-height: 50px;
     text-align: justify;
@@ -826,7 +831,7 @@ html {
 
     font-family: 'PT Root UI';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 200;
     font-size: 36px;
     line-height: 50px;
 
@@ -968,7 +973,7 @@ html {
 }
 
 .glyph-table td {
-    border: 1px solid rgba(0, 0, 255, 0.40);
+    border: 2px solid rgba(0, 0, 255, 0.50);
     width: calc(100% / 12);
     padding: 0;
     box-sizing: border-box;
